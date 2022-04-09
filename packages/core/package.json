@@ -1,6 +1,6 @@
 {
   "name": "@yuta-cli/core",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "yuta-cli core",
   "author": "yudc13 <yudachao13@gmail.com>",
   "homepage": "",
@@ -20,7 +20,7 @@
     "test": "echo \"Error: run tests from root\""
   },
   "dependencies": {
-    "@yuta-cli/utils": "^0.0.1",
+    "@yuta-cli/utils": "^0.0.2",
     "dayjs": "^1.11.0"
   }
 }
