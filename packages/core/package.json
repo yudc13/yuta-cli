@@ -5,7 +5,7 @@
   "author": "yudc13 <yudachao13@gmail.com>",
   "homepage": "",
   "license": "ISC",
-  "main": "lib/core.js",
+  "main": "lib/index.js",
   "bin": {
     "yuta-cli": "bin/index.js"
   },
