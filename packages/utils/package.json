@@ -14,7 +14,7 @@
     "lib"
   ],
   "scripts": {
-    "test": "echo \"Error: run tests from root\""
+    "test": "echo \"test utils\""
   },
   "dependencies": {
     "dayjs": "^1.11.0",

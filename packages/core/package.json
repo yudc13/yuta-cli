@@ -17,10 +17,9 @@
     "lib"
   ],
   "scripts": {
-    "test": "echo \"Error: run tests from root\""
+    "test": "echo \"test core\""
   },
   "dependencies": {
-    "@yuta-cli/utils": "^0.0.2",
     "dayjs": "^1.11.0"
   }
 }
