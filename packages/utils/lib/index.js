@@ -3,5 +3,4 @@
 module.exports = index;
 
 function index() {
-    // TODO
 }
