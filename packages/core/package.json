@@ -1,0 +1,23 @@
+{
+  "name": "@yuta-cli/core",
+  "version": "1.0.0",
+  "description": "yuta-cli core",
+  "author": "yudc13 <yudachao13@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/core.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\""
+  },
+  "dependencies": {
+    "dayjs": "^1.11.0",
+    "@yuta-cli/utils": "^1.0.0"
+  }
+}

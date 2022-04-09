@@ -1,0 +1,23 @@
+{
+  "name": "@yuta-cli/utils",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "yudc13 <yudachao13@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\""
+  },
+  "dependencies": {
+    "dayjs": "^1.11.0",
+    "lodash-es": "^4.17.21"
+  }
+}
