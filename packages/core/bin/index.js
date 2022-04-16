@@ -2,19 +2,23 @@
 
 const yargs = require('yargs/yargs')
 
-const { hideBin } = require('yargs/helpers')
+const pkg = require('../package.json')
 
-const arg = hideBin(process.argv)
+const context = {
+	yutaVersion: pkg.version
+}
 
-const cli = yargs(arg)
-
-cli
+yargs()
 	.usage('Usage: $0 <command> [options]')
 	.demandCommand(1, '至少需要一个命令')
+	.fail((err, msg) => {
+		console.log(err)
+		console.log(msg)
+	})
 	.strict()
 	.alias('h', 'help')
 	.alias('v', 'version')
-	.wrap(cli.terminalWidth())
+	.wrap(yargs().terminalWidth())
 	.epilogue(`结尾描述`)
 	.options({
 		debug: {
@@ -30,6 +34,16 @@ cli
 		// hidden: true
 	})
 	.group(['debug'], 'Dev Options')
-	.argv
+	.command('init [name]', 'init a project', yargs => {
+		yargs
+			.option('name', {
+				type: 'string',
+				describe: 'Name of a project',
+				alias: 'n'
+			})
+	}, argv => {
+		console.log(argv)
+	})
+	.parse(process.argv.slice(2), context)
 
 console.log('core')
