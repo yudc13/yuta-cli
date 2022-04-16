@@ -2,6 +2,6 @@
 
 module.exports = core;
 
-function core() {
-    console.log('exec core')
+function core(args) {
+    console.log('exec core: ', args)
 }
